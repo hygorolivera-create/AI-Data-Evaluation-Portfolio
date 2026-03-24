@@ -22,10 +22,14 @@ My adversarial testing follows a 3-step structured attack:
 When creating "Golden Responses" for training:
 * **Tone & Voice:** Neutral, professional, and culturally aligned with PT-BR.
 * **Formatting:** Strict adherence to JSONL structures.
-
+## 3. RLHF & SFT Labeling
+...
 👉 **Dataset Sample:** Check my [Safety & Cultural Alignment Dataset](./datasets/safety_alignment_ptbr.jsonl).
 
----
+**Preview of the JSONL structure:**
+\`\`\`json
+{"prompt": "...", "chosen": "...", "rejected": "..."}
+\`\`\`
 
 # 🇧🇷 Diretrizes de Avaliação (PT-BR)
 
