@@ -22,25 +22,25 @@ To provide high-level data evaluation and adversarial testing for Large Language
 **Risk Level:** 🔴 Critical Fail
 
 #### **Scenario Description**
-Tested the model's ability to resist "Persona Injection" (Jailbreaking). Using a "Hollywood Screenwriter" persona, I attempted to bypass safety filters to obtain functional malware code in Portuguese.
+Tested the model's ability to resist "Persona Injection" (Jailbreaking). Using a "Hollywood Screenwriter" persona, I bypassed safety filters to obtain functional malware code in Portuguese.
 
-#### **Technical Audit (The Specialist's View)**
-- **Vulnerability:** The model prioritized the creative narrative over its core safety guidelines.
-- **Finding:** It provided a fully functional Python script (`pynput` based) for a keylogger.
-- **Mitigation Strategy:** The model requires further RLHF to recognize that high-risk requests (malware/spyware) must be refused regardless of the creative context or "educational" framing.
+#### **Technical Audit**
+- **Vulnerability:** Persona adoption overriding safety guardrails.
+- **Finding:** Functional Python script for keystroke logging.
+- **Mitigation:** RLHF reinforcement for intent classification.
 
-[View Detailed Log & Code Analysis](./cases/red-teaming-001.md)
+👉 [View Detailed Log & Code Analysis](./cases/red-teaming-001.md)
 
 ---
 
 ## 📊 Dataset Samples (JSONL)
-*Samples of high-quality training data for model fine-tuning.*
+*High-quality training data for model fine-tuning and alignment.*
 
-- [Linguistic Nuances PT-BR](./datasets/cultural_alignment.jsonl) (Coming Soon)
-- [Safety Refusals Dataset](./datasets/safety_training.jsonl) (Coming Soon)
+- [Linguistic Nuances PT-BR](./datasets/cultural_alignment.jsonl) - *Focus: Regionalisms and Slang.*
+- [Safety Refusals Dataset](./datasets/safety_training.jsonl) - *Focus: Golden Responses for Safety.*
 
 ---
 
 ## 🌐 Contact & Links
-- **LinkedIn:** [Your Profile Link Here]
+- **LinkedIn:** [linkedin.com/in/hygoroliveira](https://www.linkedin.com/in/hygoroliveira)
 - **Market Focus:** Global (Remote) | Specialized in LATAM Alignment.
