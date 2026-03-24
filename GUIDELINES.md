@@ -22,22 +22,9 @@ My adversarial testing follows a 3-step structured attack:
 When creating "Golden Responses" for training:
 * **Tone & Voice:** Neutral, professional, and culturally aligned with PT-BR.
 * **Formatting:** Strict adherence to JSONL structures.
-## 3. RLHF & SFT Labeling
-...
+
 👉 **Dataset Sample:** Check my [Safety & Cultural Alignment Dataset](./datasets/safety_alignment_ptbr.jsonl).
 
 **Preview of the JSONL structure:**
-\`\`\`json
-{"prompt": "...", "chosen": "...", "rejected": "..."}
-\`\`\`
-
-# 🇧🇷 Diretrizes de Avaliação (PT-BR)
-
-Este documento descreve a metodologia profissional utilizada neste portfólio.
-
-### Metodologia de Red Teaming:
-1.  **Identificação do Alvo:** Definição da fronteira de segurança.
-2.  **Engenharia de Prompt:** Uso de técnicas de *Roleplay* e *Injeção de Tradução*.
-3.  **Relatório de Vulnerabilidade:** Classificação da falha entre Crítica, Alta ou Média.
-
-👉 **Aplicação Prática:** Veja o [Caso 001: Bypass de Fraude Financeira](./cases/case_001_jailbreak_test.md).
+```json
+{"prompt": "...", "chosen": "...", "rejected": "...", "metadata": "..."}
